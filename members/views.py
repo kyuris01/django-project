@@ -2,6 +2,16 @@ from django.shortcuts import render
 from django.http.response import HttpResponse
 from .models import Members
 # Create your views here.
+def gu(req):
+    num = req.GET.get('num', '')
+    return HttpResponse(f'<h1>gugu : {num_gugu(num)}</h1>')
+
+def num_gugu(num):
+    str = ""
+    for i in range(1,10):
+        str += f'{int(num)} * {i} = {int(num) * i}<br>'
+    return str    
+
 def index(request):
     return HttpResponse("<h1>Wonderful World</h1>")
 
