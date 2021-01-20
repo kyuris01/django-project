@@ -5,5 +5,6 @@ urlpatterns = [
         path('test', views.test),
         path('test2', views.test2),
         path('signup', views.signup),
+        path('git', views.git),
         path('calender', views.calender)
 ]

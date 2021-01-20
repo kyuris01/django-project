@@ -11,6 +11,9 @@ def test(req):
 def test2(req):
     return HttpResponse("<h2>Test2</h2>")
 
+def git(req):
+    return HttpResponse("visual code 이용한 git사용")
+
 def signup(req):
     if req.method == 'POST':
         username = req.POST['username']
